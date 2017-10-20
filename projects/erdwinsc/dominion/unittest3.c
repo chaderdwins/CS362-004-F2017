@@ -52,4 +52,6 @@ int main() {
 	personalAssertion((payLoad == 30), "Amount of Gold Present");
 
 	verifyAssert();
+
+	return 0;
 }

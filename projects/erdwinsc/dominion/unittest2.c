@@ -55,4 +55,6 @@ int main() {
 	personalAssertion((payLoad != 0), "Multiple Duplicates Detected!!!");
 
 	verifyAssert();
+
+	return 0;
 }
