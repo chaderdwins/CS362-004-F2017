@@ -28,6 +28,7 @@ void personalAssertion(int choya, const char *errorMsg) {
 }
 
 int main() {
+	printf("Now Testing initializeGame()...");
 	// Declaring variables so game will begin
 	int cardsAvailable[] = { smithy,adventurer,gardens,embargo,cutpurse,mine,
 		ambassador,outpost,baron,tribute };

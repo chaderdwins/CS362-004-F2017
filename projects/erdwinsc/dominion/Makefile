@@ -27,60 +27,52 @@ tests: unittest1.c unittest2.c unittest3.c unittest4.c cardtest1.c cardtest2.c c
 
 unittestresults.out: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 playdom
 	./unittest1 >> unittestresults.out
-	echo "GCOV AFTER UNITTEST1" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
+	./playdom 234 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov unittest1.c >> unittestresults.out
 	
 	./unittest2 >> unittestresults.out
-	echo "GCOV AFTER UNITTEST2" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
+	./playdom 234 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	
+	gcov unittest2.c >> unittestresults.out
+
 	./unittest3 >> unittestresults.out
-	echo "GCOV AFTER UNITTEST3" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
+	./playdom 234 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov unittest3.c >> unittestresults.out
 
 	./unittest4 >> unittestresults.out
-	echo "GCOV AFTER UNITTEST4" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
+	./playdom 234 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov unittest4.c >> unittestresults.out
 
 	./cardtest1 >> unittestresults.out
-	echo "GCOV AFTER CARDTEST1" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
+	./playdom 234 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov cardtest1.c >> unittestresults.out
 
 	./cardtest2 >> unittestresults.out
-	echo "GCOV AFTER CARDTEST2" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
+	./playdom 234 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov cardtest2.c >> unittestresults.out
 
 	./cardtest3 >> unittestresults.out
-	echo "GCOV AFTER CARDTEST3" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
+	./playdom 234 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
+	gcov cardtest3.c >> unittestresults.out
 
 	./cardtest4 >> unittestresults.out
-	echo "GCOV AFTER CARDTEST4" >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	./playdom 3 >> unittestresults.out
-	echo "RESULTS AFTER A GAME" >> unittestresults.out
-	gcov dominion.c >> unittestresults.out	
+	./playdom 234 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	gcov cardtest4.c >> unittestresults.out	
 
 
 testBuyCard: testDrawCard.c dominion.o rngs.o

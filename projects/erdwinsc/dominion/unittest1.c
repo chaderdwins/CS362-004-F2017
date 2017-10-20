@@ -1,3 +1,9 @@
+/*
+Chad Erdwins CS 362
+unittest1.c
+testing the function isGameOver() in dominion.c
+*/
+
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
@@ -7,32 +13,45 @@
 
 int critFail = 0;
 
-void reviewAss() {
-	if (!critFail) {
-		printf("Testing Complete!\n");
+void personalAssert(int choya, char *errorMsg)
+{
+	if (choya == 0) {
+		printf("Warning: %s\n\n", errorMsg);
+		critFail = 1;
 	}
 }
 
-int personalAssert(int choya, char* errorMsg) {
-	if (choya == 0) {
-		printf("Attention: %s\n", errorMsg);
-		critFail = 1;
+void reviewAss()
+{
+	if (!critFail) {
+		printf("Testing Done. Congratulations!\n\n");
 	}
 }
 
 int main()
 {
-	struct gameState gamma;
-	int tally;
-	int rngSeed = 124;
-	int playerCount = 2;
+	printf("Testing isGameOver()...\n\n");
+	int gameHold;
+	int i;
+	struct gameState *gameOn = calloc(1, sizeof(struct gameState));
 
-	int kingdomCards[10] = { smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,outpost,baron,tribute };
+	for (i = 0; i < treasure_map; i++) {
+		gameOn->supplyCount[i] = 10;
+	}
 
-	initializeGame(playerCount, kingdomCards, rngSeed, &gamma);
+	gameHold = isGameOver(gameOn);
+	personalAssert(gameHold == 0, "supplyCount is set!");
 
-	tally = drawCard(1, &gamma);
-	personalAssert(tally == 0, "Bug Detected!");
+	//I am forcing game over here
+	gameOn->supplyCount[province] = 0;
+	gameHold = isGameOver(gameOn);
+	personalAssert(gameHold == 1, "You should see this message if province is set to zero and it is game over!");
+
+	//another parameter that should force game over.
+	gameOn->supplyCount[province] = 10;
+	gameOn->supplyCount[duchy] = 0;
+	gameHold = isGameOver(gameOn);
+	personalAssert(gameHold == 1, "Duchy supply is zero, should result in game over!");
 
 	reviewAss();
 	return 0;

@@ -3,6 +3,7 @@ Chad Erdwins CS 362
 unittest4.c
 testing the function whoseTurn() in dominion.c
 */
+
 #include "dominion.h"
 #include "stdio.h"
 
@@ -10,12 +11,13 @@ int critFail = 0;
 
 void personalAssert(int choya) {
 	if (!choya) {
-		printf("FAILED ASSERTION\n");
+		printf("FAILED ASSERTION: \n");
 		critFail = 1;
 	}
 }
 
 int main() {
+	printf("Now Testing whoseTurn()...");
 	//declaring game state
 	struct gameState gameOn;
 

@@ -26,6 +26,7 @@ void verifyAssert() {
 }
 
 int main() {
+	printf("Now testing supplyCount()...");
 	struct gameState gameOn;
 	struct gameState *firstG = &gameOn;
 	int participants = 2;
