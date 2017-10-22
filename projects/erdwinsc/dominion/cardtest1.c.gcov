@@ -1,0 +1,57 @@
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2:Chad Erdwins
+        -:    3:cardtest1.c
+        -:    4:Unit Test for smithy
+        -:    5:CS362
+        -:    6:*/
+        -:    7:
+        -:    8:#include <assert.h>
+        -:    9:#include "dominion.h"
+        -:   10:#include "dominion_helpers.h"
+        -:   11:#include <stdio.h>
+        -:   12:#include "rngs.h"
+        -:   13:#include <stdlib.h>
+        -:   14:#include <math.h>
+        -:   15:
+        -:   16://this variable should remain 0 if all goes smoothly
+        -:   17:int critFail = 0;
+        -:   18:
+        1:   19:int personalAssertion(int choya, char* errorMSG) {
+        1:   20:	if (choya == 0) {
+    #####:   21:		printf("Smithy Card is Bugged: %s\n", errorMSG);
+        -:   22:		//update to store bug
+    #####:   23:		critFail = 1;
+        -:   24:	}
+        1:   25:}
+        -:   26:
+        1:   27:void verifyAss() {
+        1:   28:	if (!critFail) {
+        1:   29:		printf("Smithy Card Test Successful.\n");
+        -:   30:	}
+        1:   31:}
+        -:   32:
+        1:   33:int main()
+        -:   34:{
+        -:   35:	struct gameState gameOn;
+        -:   36:	int payLoad;
+        1:   37:	int rngSeed = 333;
+        1:   38:	int participants = 2;
+        -:   39:
+        -:   40:
+        1:   41:	int cardHand[10] = { smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,outpost,baron,tribute };
+        -:   42:
+        -:   43:	//initializing game and passing parameters
+        1:   44:	initializeGame(participants, cardHand, rngSeed, &gameOn);
+        -:   45:
+        -:   46:	//passing parameters to check and see if the smithy card behaves accordingly
+        1:   47:	payLoad = cardEffect(smithy, 1, 1, 1, &gameOn, 1, 0);
+        1:   48:	personalAssertion(payLoad == 0, "Smithy Return");
+        -:   49:
+        1:   50:	verifyAss();
+        1:   51:	return 0;
+        -:   52:}

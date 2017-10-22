@@ -1,0 +1,66 @@
+        -:    0:Source:unittest2.c
+        -:    0:Graph:unittest2.gcno
+        -:    0:Data:unittest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2:Chad Erdwins CS 362
+        -:    3:unittest2.c
+        -:    4:testing the function initializeGame() in dominion.c
+        -:    5:*/
+        -:    6:
+        -:    7:#include "dominion.h"
+        -:    8:#include <stdio.h>
+        -:    9:
+        -:   10://this variable should remain 0 if all goes smoothly
+        -:   11:int critFail = 0;
+        -:   12:
+        1:   13:void verifyAssert() {
+        1:   14:	if (!critFail) {
+        1:   15:		printf("NO BUGS DETECTED!\n");
+        -:   16:	}
+        -:   17:	else {
+    #####:   18:		printf("WARNING! BUGS ARE PRESENT!\n");
+        -:   19:	}
+        1:   20:}
+        -:   21:
+        2:   22:void personalAssertion(int choya, const char *errorMsg) {
+        2:   23:	if (!choya) {
+    #####:   24:		printf("Failure: %s\n", errorMsg);
+        -:   25:		//bugs are present
+    #####:   26:		critFail = 1;
+        -:   27:	}
+        2:   28:}
+        -:   29:
+        1:   30:int main() {
+        1:   31:	printf("Now Testing initializeGame()...");
+        -:   32:	// Declaring variables so game will begin
+        1:   33:	int cardsAvailable[] = { smithy,adventurer,gardens,embargo,cutpurse,mine,
+        -:   34:		ambassador,outpost,baron,tribute };
+        -:   35:	struct gameState gameOn;
+        -:   36:	//number of players available
+        1:   37:	int participants = 2;
+        -:   38:	//random seed number
+        1:   39:	int rngSeed = 4975;
+        -:   40:	
+        -:   41:
+        -:   42:	//calling initializeGame from dominion.c and passing the necessary parameters
+        1:   43:	int payLoad = initializeGame(participants, cardsAvailable, rngSeed, &gameOn);
+        -:   44:
+        -:   45:	//calling my assertion to debug and verify
+        1:   46:	personalAssertion((payLoad == 0), "Initializing Game Failure");
+        -:   47:
+        -:   48:	// declaring a deck with many duplicates to test and see if it detects bug
+        1:   49:	int duplicateDeck[] = { smithy,smithy,adventurer,adventurer,gardens,gardens,
+        -:   50:		embargo,embargo,cutpurse,cutpurse };
+        -:   51:
+        -:   52:	//passing everything to initializeGame function and the duplicate array
+        1:   53:	payLoad = initializeGame(participants, duplicateDeck, rngSeed, &gameOn);
+        -:   54:
+        -:   55:	//I expect this message to return because of the multiple duplicates
+        1:   56:	personalAssertion((payLoad != 0), "Multiple Duplicates Detected!!!");
+        -:   57:
+        1:   58:	verifyAssert();
+        -:   59:
+        1:   60:	return 0;
+        -:   61:}
