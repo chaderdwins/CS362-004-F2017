@@ -1,69 +1,72 @@
-//testing smithy
+/*
+Chad Erdwins CS 362
+randomtestcard1.c
+randomly testing smithy card
+*/
 
-#include "dominion.h"
-#include "rngs.h"
+#include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
-#include <assert.h>
+#include "dominion.h"
+#include "dominion_helpers.h"
+#include "rngs.h"
 
-#define MAX_TESTS 2000
+#define MAXIMUSTESTIMUS 25
 
 int main() {
+	//setting the initial deck
+	int kingdomDeck[10] = { adventurer, gardens, village, smithy, sea_hag, mine, minion, great_hall, embargo, cutpurse };
 
-	int k[10] = { adventurer, gardens, embargo, village, minion, mine, cutpurse,
-		sea_hag, tribute, smithy };
-	int preHandCount, postHandCount, preDeckCount, postDeckCount, handDiff, deckDiff;
-	int wrongCount = 0;
-	int correctCount = 0;
-	int i, players, player, seed, handPos;
-	struct gameState state;
+	//seeding
+	int rngSeed = rand();
+	
+	struct gameState gameOn;
 
-	printf("Running Random Smithy Test...\n");
-
-	for (i = 0; i < MAX_TESTS; i++) {
-
-		players = rand() % 4;
-		seed = rand();
-		handPos = rand() % 4;
-		player = rand() % (players + 1);
-
-		initializeGame(players, k, seed, &state);
-
-		//Initiate valid state variables
-		state.deckCount[player] = rand() % MAX_DECK;
-		state.discardCount[player] = rand() % MAX_DECK;
-		state.handCount[player] = rand() % MAX_HAND;
-
-		// set up all the pre-call variables
-		preHandCount = state.handCount[player];
-		preDeckCount = state.deckCount[player];
-
-		cardEffect(smithy, 1, 1, 1, &state, handPos, 0);
-
-		// record post-call variables
-		postHandCount = state.handCount[player];
-		postDeckCount = state.deckCount[player];
-
-		// calculations to test accuracy of this test
-		handDiff = postHandCount - preHandCount;
-		deckDiff = preDeckCount - postDeckCount;
-
-		if (handDiff != 2 && postDeckCount >= 0) {
-			wrongCount = wrongCount + 1;
+	int i,
+		z;
+	for (i = 0; i<MAXIMUSTESTIMUS; i++) {
+		
+		int participants = (rand() % MAX_PLAYERS);
+		if (participants < 2) {
+			participants = participants + 2;
 		}
-		else if (postDeckCount == 0) {
-			if (handDiff == preDeckCount) correctCount = correctCount + 1;
-			else wrongCount = wrongCount + 1;
+		//starting game
+		initializeGame(participants, kingdomDeck, rngSeed, &gameOn);
+
+		//nested for loop gives players a hand and deck
+		for (z = 0; z < participants; z++) {
+
+			//intializing the deck
+			gameOn.deckCount[z] = rand() % MAX_DECK;
+			//initializing the hand
+			gameOn.handCount[z] = rand() % MAX_HAND;
+			//initializing the discard pile
+			gameOn.discardCount[z] = rand() % MAX_DECK;
+
+			//inserting smithy into hand
+			gameOn.hand[z][0] = smithy;
+
+			//capturing the deck and hand size before smithy is played
+			int beforeHand = numHandCards(&gameOn);
+			int beforeDeck = gameOn.deckCount[z] + gameOn.discardCount[z];
+
+			//play the smithy card
+			int difference = playCard(0, 0, 0, 0, &gameOn);
+
+			//check if player drew any cards
+			if (numHandCards(&gameOn) != beforeHand + 3 && beforeDeck >= 3) {
+				printf("Test: %d Player: %d did not draw 3 cards\n", i, z);
+			}
+			//check if player drew less than 3 cards
+			if (numHandCards(&gameOn) != beforeHand + 2 && beforeDeck >= 2) {
+				printf("Test: %d Player: %d drew 2 cards instead of 3 cards\n", i, z);
+			}
+
+			endTurn(&gameOn);
+
 		}
-		else {
-			correctCount = correctCount + 1;
-		}
+
+
 	}
-
-	printf("%i Tests Complete\n", MAX_TESTS);
-	printf("Correct Results: %i\n", correctCount);
-	printf("Wrong Results: %i\n", wrongCount);
-
 	return 0;
 }

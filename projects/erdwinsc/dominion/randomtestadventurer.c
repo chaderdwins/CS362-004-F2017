@@ -1,3 +1,9 @@
+/*
+Chad Erdwins CS 362
+randomtestadventurer.c
+randomly testing adventurer card
+*/
+
 #include "dominion.h"
 #include "rngs.h"
 #include <stdio.h>
@@ -7,7 +13,7 @@
 #include <time.h>
 
 //declaring this constant to limit the maximum tests
-#define MAX_TESTS 25
+#define MAXIMUSTESTIMUS 25
 
 int personalAssert(int choya, char* errorMsg) {
   if (!choya) {
@@ -15,16 +21,9 @@ int personalAssert(int choya, char* errorMsg) {
   }
 }
 
-int postAdventure(struct gameState*status, double participant, double previousHand){
-	int i = 2;
-	//initial check to see if player drew any card at all
-	if(status->handCount[participant] - i != previousHand){ 
-		 printf("The player has not drawn any cards. Please advise.\n\n");
-		 return 0;
-	}
-
+int postAdventure(struct gameState*status, int participant, int previousHand){
 	//checking to see if the player drew at least two treasure cards
-	i = 2;
+	int i = 2;
 	if(status->hand[participant][status->handCount[participant] - i] != gold && status->hand[participant][status->handCount[participant] - i] != copper && status->hand[participant][status->handCount[participant] - i] != silver){
 		printf("The player has not drawn at least two treasure cards. Please advise.\n\n");
 		 return 0;	
@@ -53,7 +52,7 @@ int main() {
 	printf("Commence random adventurer testing:\n\n");
 
 	//testing 25 times
-	for (i = 1; i <= MAX_TESTS; i++) {
+	for (i = 1; i <= MAXIMUSTESTIMUS; i++) {
 		//seeding RNG
 		rngSeed = rand();
 		//assigning a random number of player to numberPlayers, minimum is 2 and maximum is 4

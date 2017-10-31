@@ -695,9 +695,9 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 	  return 0;
 
   }
-  void playCouncilRoom() {//introduced bug where the player draws only 2 cards instead of the intended 4
+  void playCouncilRoom() {
 	  //+4 Cards
-	  for (i = 0; i < 2; i++)
+	  for (i = 0; i < 4; i++)
 	  {
 		  drawCard(currentPlayer, state);
 	  }

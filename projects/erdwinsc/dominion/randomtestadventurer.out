@@ -1,0 +1,249 @@
+Commence random adventurer testing:
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+CONGRATULATIONS TESTING IS FINISHED ON ADVENTURER.
+
+
+File 'randomtestadventurer.c'
+Lines executed:100.00% of 31
+Creating 'randomtestadventurer.c.gcov'
+
+File 'dominion.c'
+Lines executed:52.15% of 558
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 0
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 1
+smithy played.
+0: bought province
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+0: bought province
+0: end turn
+0: bought silver
+0: end turn
+0: bought silver
+0: end turn
+0: bought gold
+0: end turn
+0: bought gold
+0: end turn
+0: bought silver
+0: end turn
+0: bought province
+0: end turn
+0: bought province
+0: end turn
+0: bought gold
+0: end turn
+0: bought silver
+0: end turn
+0: bought province
+0: end turn
+0: bought province
+0: end turn
+0: bought silver
+0: end turn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 12
+Player 1: 10
+Commence random adventurer testing:
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has not drawn at least two treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+The player has drawn more than 2 treasure cards. Please advise.
+
+personalAssert has failed: WARNING: BUG DETECTED.
+
+CONGRATULATIONS TESTING IS FINISHED ON ADVENTURER.
+
+
+File 'randomtestadventurer.c'
+Lines executed:100.00% of 31
+Creating 'randomtestadventurer.c.gcov'
+
+File 'dominion.c'
+Lines executed:52.15% of 558
+Creating 'dominion.c.gcov'
+
