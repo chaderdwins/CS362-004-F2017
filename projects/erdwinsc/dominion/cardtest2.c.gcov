@@ -1,0 +1,49 @@
+        -:    0:Source:cardtest2.c
+        -:    0:Graph:cardtest2.gcno
+        -:    0:Data:cardtest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2:Chad Erdwins CS 362
+        -:    3:cardtest2.c
+        -:    4:Unit Test for adventurer card
+        -:    5:*/
+        -:    6:
+        -:    7:#include <assert.h>
+        -:    8:#include "dominion.h"
+        -:    9:#include "dominion_helpers.h"
+        -:   10:#include <stdio.h>
+        -:   11:#include "rngs.h"
+        -:   12:#include <stdlib.h>
+        -:   13:#include <math.h>
+        -:   14:
+        -:   15:int critFail = 0;
+        -:   16:
+        1:   17:int personalAssert(int choya, char* errorMsg) {
+        1:   18:	if (choya == 0) {
+    #####:   19:		printf("Fail: %s\n\n", errorMsg);
+    #####:   20:		critFail = 1;
+        -:   21:	}
+        1:   22:}
+        -:   23:
+        1:   24:void reviewAss() {
+        1:   25:	if (!critFail) {
+        1:   26:		printf("End Testing Adventurer!\n\n");
+        -:   27:	}
+        1:   28:}
+        -:   29:
+        1:   30:int main()
+        -:   31:{
+        1:   32:	printf("Commence adventurer testing");
+        -:   33:	struct gameState gameOn;
+        -:   34:	int tally;
+        1:   35:	int cardInDeck[10] = { smithy,adventurer,gardens,embargo,cutpurse,mine,ambassador,outpost,baron,tribute };
+        -:   36:
+        1:   37:	initializeGame(2, cardInDeck, 5, &gameOn);
+        -:   38:	//I am passing the parameters where I think the bug should be
+        1:   39:	tally = cardEffect(adventurer, 1, 1, 1, &gameOn, 1, 0);
+        1:   40:	personalAssert(tally == 0, "Bug present!");
+        -:   41:
+        1:   42:	reviewAss();
+        1:   43:	return 0;
+        -:   44:}

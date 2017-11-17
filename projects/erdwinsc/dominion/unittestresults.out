@@ -1,0 +1,631 @@
+Testing isGameOver()...
+
+Warning: Duchy supply is zero, should result in game over!
+
+File 'dominion.c'
+Lines executed:1.59% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:43.19% of 565
+Creating 'dominion.c.gcov'
+
+File 'unittest1.c'
+Lines executed:96.00% of 25
+Creating 'unittest1.c.gcov'
+
+Now Testing initializeGame()...NO BUGS DETECTED!
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+File 'unittest2.c'
+Lines executed:86.36% of 22
+Creating 'unittest2.c.gcov'
+
+Now testing supplyCount()...NO BUGS DETECTED!
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+File 'unittest3.c'
+Lines executed:88.00% of 25
+Creating 'unittest3.c.gcov'
+
+Now Testing whoseTurn()...Passed Successfully!
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+File 'unittest4.c'
+Lines executed:78.57% of 14
+Creating 'unittest4.c.gcov'
+
+Smithy Card Test Successful.
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+File 'cardtest1.c'
+Lines executed:88.89% of 18
+Creating 'cardtest1.c.gcov'
+
+Commence adventurer testingEnd Testing Adventurer!
+
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:43.36% of 565
+Creating 'dominion.c.gcov'
+
+File 'cardtest2.c'
+Lines executed:88.24% of 17
+Creating 'cardtest2.c.gcov'
+
+Query Gardens for bugs:
+Testing Complete.
+File 'dominion.c'
+Lines executed:43.72% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:43.72% of 565
+Creating 'dominion.c.gcov'
+
+File 'cardtest3.c'
+Lines executed:94.12% of 17
+Creating 'cardtest3.c.gcov'
+
+Testing Village Card Now...
+Testing Complete.
+
+File 'dominion.c'
+Lines executed:44.42% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 2
+1: bought province
+1: endTurn
+0: smithy played from position 3
+smithy played.
+0: bought province
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 3
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: adventurer played from position 1
+1: bought province
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 15
+Player 1: 19
+File 'dominion.c'
+Lines executed:44.42% of 565
+Creating 'dominion.c.gcov'
+
+File 'cardtest4.c'
+Lines executed:94.12% of 17
+Creating 'cardtest4.c.gcov'
+

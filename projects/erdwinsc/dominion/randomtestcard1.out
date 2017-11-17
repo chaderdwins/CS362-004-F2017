@@ -1,0 +1,221 @@
+Test: 0 Player: 0 drew 2 cards instead of 3 cards
+Test: 0 Player: 1 drew 2 cards instead of 3 cards
+Test: 1 Player: 0 drew 2 cards instead of 3 cards
+Test: 1 Player: 1 drew 2 cards instead of 3 cards
+Test: 1 Player: 2 drew 2 cards instead of 3 cards
+Test: 2 Player: 0 drew 2 cards instead of 3 cards
+Test: 2 Player: 1 drew 2 cards instead of 3 cards
+Test: 3 Player: 0 drew 2 cards instead of 3 cards
+Test: 3 Player: 1 drew 2 cards instead of 3 cards
+Test: 4 Player: 0 drew 2 cards instead of 3 cards
+Test: 4 Player: 1 drew 2 cards instead of 3 cards
+Test: 5 Player: 0 drew 2 cards instead of 3 cards
+Test: 5 Player: 1 drew 2 cards instead of 3 cards
+Test: 6 Player: 0 drew 2 cards instead of 3 cards
+Test: 6 Player: 1 drew 2 cards instead of 3 cards
+Test: 7 Player: 0 drew 2 cards instead of 3 cards
+Test: 7 Player: 1 drew 2 cards instead of 3 cards
+Test: 8 Player: 0 drew 2 cards instead of 3 cards
+Test: 8 Player: 1 drew 2 cards instead of 3 cards
+Test: 8 Player: 2 drew 2 cards instead of 3 cards
+Test: 9 Player: 0 drew 2 cards instead of 3 cards
+Test: 9 Player: 1 drew 2 cards instead of 3 cards
+Test: 10 Player: 0 drew 2 cards instead of 3 cards
+Test: 10 Player: 1 drew 2 cards instead of 3 cards
+Test: 11 Player: 0 drew 2 cards instead of 3 cards
+Test: 11 Player: 1 drew 2 cards instead of 3 cards
+Test: 12 Player: 0 drew 2 cards instead of 3 cards
+Test: 12 Player: 1 drew 2 cards instead of 3 cards
+Test: 13 Player: 0 drew 2 cards instead of 3 cards
+Test: 13 Player: 1 drew 2 cards instead of 3 cards
+Test: 14 Player: 0 drew 2 cards instead of 3 cards
+Test: 14 Player: 1 drew 2 cards instead of 3 cards
+Test: 14 Player: 2 drew 2 cards instead of 3 cards
+Test: 15 Player: 0 drew 2 cards instead of 3 cards
+Test: 15 Player: 1 drew 2 cards instead of 3 cards
+Test: 15 Player: 2 drew 2 cards instead of 3 cards
+Test: 16 Player: 0 drew 2 cards instead of 3 cards
+Test: 16 Player: 1 drew 2 cards instead of 3 cards
+Test: 16 Player: 2 drew 2 cards instead of 3 cards
+Test: 17 Player: 0 drew 2 cards instead of 3 cards
+Test: 17 Player: 1 drew 2 cards instead of 3 cards
+Test: 17 Player: 2 drew 2 cards instead of 3 cards
+Test: 18 Player: 0 drew 2 cards instead of 3 cards
+Test: 18 Player: 1 drew 2 cards instead of 3 cards
+Test: 18 Player: 2 drew 2 cards instead of 3 cards
+Test: 19 Player: 0 drew 2 cards instead of 3 cards
+Test: 19 Player: 1 drew 2 cards instead of 3 cards
+Test: 19 Player: 2 drew 2 cards instead of 3 cards
+Test: 20 Player: 0 drew 2 cards instead of 3 cards
+Test: 20 Player: 1 drew 2 cards instead of 3 cards
+Test: 21 Player: 0 drew 2 cards instead of 3 cards
+Test: 21 Player: 1 drew 2 cards instead of 3 cards
+Test: 21 Player: 2 drew 2 cards instead of 3 cards
+Test: 22 Player: 0 drew 2 cards instead of 3 cards
+Test: 22 Player: 1 drew 2 cards instead of 3 cards
+Test: 22 Player: 2 drew 2 cards instead of 3 cards
+Test: 23 Player: 0 drew 2 cards instead of 3 cards
+Test: 23 Player: 1 drew 2 cards instead of 3 cards
+Test: 23 Player: 2 drew 2 cards instead of 3 cards
+Test: 24 Player: 0 drew 2 cards instead of 3 cards
+Test: 24 Player: 1 drew 2 cards instead of 3 cards
+Test: 24 Player: 2 drew 2 cards instead of 3 cards
+File 'randomtestcard1.c'
+Lines executed:95.45% of 22
+Creating 'randomtestcard1.c.gcov'
+
+File 'dominion.c'
+Lines executed:45.49% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 0
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 4
+1: bought province
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought province
+0: end turn
+1: adventurer played from position 3
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought gold
+1: endTurn
+0: bought silver
+0: end turn
+1: bought gold
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 4
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: bought gold
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 13
+Player 1: 40
+Test: 0 Player: 0 drew 2 cards instead of 3 cards
+Test: 0 Player: 1 drew 2 cards instead of 3 cards
+Test: 1 Player: 0 drew 2 cards instead of 3 cards
+Test: 1 Player: 1 drew 2 cards instead of 3 cards
+Test: 1 Player: 2 drew 2 cards instead of 3 cards
+Test: 2 Player: 0 drew 2 cards instead of 3 cards
+Test: 2 Player: 1 drew 2 cards instead of 3 cards
+Test: 3 Player: 0 drew 2 cards instead of 3 cards
+Test: 3 Player: 1 drew 2 cards instead of 3 cards
+Test: 4 Player: 0 drew 2 cards instead of 3 cards
+Test: 4 Player: 1 drew 2 cards instead of 3 cards
+Test: 5 Player: 0 drew 2 cards instead of 3 cards
+Test: 5 Player: 1 drew 2 cards instead of 3 cards
+Test: 6 Player: 0 drew 2 cards instead of 3 cards
+Test: 6 Player: 1 drew 2 cards instead of 3 cards
+Test: 7 Player: 0 drew 2 cards instead of 3 cards
+Test: 7 Player: 1 drew 2 cards instead of 3 cards
+Test: 8 Player: 0 drew 2 cards instead of 3 cards
+Test: 8 Player: 1 drew 2 cards instead of 3 cards
+Test: 8 Player: 2 drew 2 cards instead of 3 cards
+Test: 9 Player: 0 drew 2 cards instead of 3 cards
+Test: 9 Player: 1 drew 2 cards instead of 3 cards
+Test: 10 Player: 0 drew 2 cards instead of 3 cards
+Test: 10 Player: 1 drew 2 cards instead of 3 cards
+Test: 11 Player: 0 drew 2 cards instead of 3 cards
+Test: 11 Player: 1 drew 2 cards instead of 3 cards
+Test: 12 Player: 0 drew 2 cards instead of 3 cards
+Test: 12 Player: 1 drew 2 cards instead of 3 cards
+Test: 13 Player: 0 drew 2 cards instead of 3 cards
+Test: 13 Player: 1 drew 2 cards instead of 3 cards
+Test: 14 Player: 0 drew 2 cards instead of 3 cards
+Test: 14 Player: 1 drew 2 cards instead of 3 cards
+Test: 14 Player: 2 drew 2 cards instead of 3 cards
+Test: 15 Player: 0 drew 2 cards instead of 3 cards
+Test: 15 Player: 1 drew 2 cards instead of 3 cards
+Test: 15 Player: 2 drew 2 cards instead of 3 cards
+Test: 16 Player: 0 drew 2 cards instead of 3 cards
+Test: 16 Player: 1 drew 2 cards instead of 3 cards
+Test: 16 Player: 2 drew 2 cards instead of 3 cards
+Test: 17 Player: 0 drew 2 cards instead of 3 cards
+Test: 17 Player: 1 drew 2 cards instead of 3 cards
+Test: 17 Player: 2 drew 2 cards instead of 3 cards
+Test: 18 Player: 0 drew 2 cards instead of 3 cards
+Test: 18 Player: 1 drew 2 cards instead of 3 cards
+Test: 18 Player: 2 drew 2 cards instead of 3 cards
+Test: 19 Player: 0 drew 2 cards instead of 3 cards
+Test: 19 Player: 1 drew 2 cards instead of 3 cards
+Test: 19 Player: 2 drew 2 cards instead of 3 cards
+Test: 20 Player: 0 drew 2 cards instead of 3 cards
+Test: 20 Player: 1 drew 2 cards instead of 3 cards
+Test: 21 Player: 0 drew 2 cards instead of 3 cards
+Test: 21 Player: 1 drew 2 cards instead of 3 cards
+Test: 21 Player: 2 drew 2 cards instead of 3 cards
+Test: 22 Player: 0 drew 2 cards instead of 3 cards
+Test: 22 Player: 1 drew 2 cards instead of 3 cards
+Test: 22 Player: 2 drew 2 cards instead of 3 cards
+Test: 23 Player: 0 drew 2 cards instead of 3 cards
+Test: 23 Player: 1 drew 2 cards instead of 3 cards
+Test: 23 Player: 2 drew 2 cards instead of 3 cards
+Test: 24 Player: 0 drew 2 cards instead of 3 cards
+Test: 24 Player: 1 drew 2 cards instead of 3 cards
+Test: 24 Player: 2 drew 2 cards instead of 3 cards
+File 'randomtestcard1.c'
+Lines executed:95.45% of 22
+Creating 'randomtestcard1.c.gcov'
+
+File 'dominion.c'
+Lines executed:45.49% of 565
+Creating 'dominion.c.gcov'
+

@@ -1,0 +1,77 @@
+        -:    0:Source:randomtestcard1.c
+        -:    0:Graph:randomtestcard1.gcno
+        -:    0:Data:randomtestcard1.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2:Chad Erdwins CS 362
+        -:    3:randomtestcard1.c
+        -:    4:randomly testing smithy card
+        -:    5:*/
+        -:    6:
+        -:    7:#include <stdlib.h>
+        -:    8:#include <stdio.h>
+        -:    9:#include <math.h>
+        -:   10:#include "dominion.h"
+        -:   11:#include "dominion_helpers.h"
+        -:   12:#include "rngs.h"
+        -:   13:
+        -:   14:#define MAXIMUSTESTIMUS 25
+        -:   15:
+        2:   16:int main() {
+        -:   17:	//setting the initial deck
+        2:   18:	int kingdomDeck[10] = { adventurer, gardens, village, smithy, sea_hag, mine, minion, great_hall, embargo, cutpurse };
+        -:   19:
+        -:   20:	//seeding
+        2:   21:	int rngSeed = rand();
+        -:   22:	
+        -:   23:	struct gameState gameOn;
+        -:   24:
+        -:   25:	int i,
+        -:   26:		z;
+       52:   27:	for (i = 0; i<MAXIMUSTESTIMUS; i++) {
+        -:   28:		
+       50:   29:		int participants = (rand() % MAX_PLAYERS);
+       50:   30:		if (participants < 2) {
+       26:   31:			participants = participants + 2;
+        -:   32:		}
+        -:   33:		//starting game
+       50:   34:		initializeGame(participants, kingdomDeck, rngSeed, &gameOn);
+        -:   35:
+        -:   36:		//nested for loop gives players a hand and deck
+      174:   37:		for (z = 0; z < participants; z++) {
+        -:   38:
+        -:   39:			//intializing the deck
+      124:   40:			gameOn.deckCount[z] = rand() % MAX_DECK;
+        -:   41:			//initializing the hand
+      124:   42:			gameOn.handCount[z] = rand() % MAX_HAND;
+        -:   43:			//initializing the discard pile
+      124:   44:			gameOn.discardCount[z] = rand() % MAX_DECK;
+        -:   45:
+        -:   46:			//inserting smithy into hand
+      124:   47:			gameOn.hand[z][0] = smithy;
+        -:   48:
+        -:   49:			//capturing the deck and hand size before smithy is played
+      124:   50:			int beforeHand = numHandCards(&gameOn);
+      124:   51:			int beforeDeck = gameOn.deckCount[z] + gameOn.discardCount[z];
+        -:   52:
+        -:   53:			//play the smithy card
+      124:   54:			int difference = playCard(0, 0, 0, 0, &gameOn);
+        -:   55:
+        -:   56:			//check if player drew any cards
+      124:   57:			if (numHandCards(&gameOn) != beforeHand + 3 && beforeDeck >= 3) {
+    #####:   58:				printf("Test: %d Player: %d did not draw 3 cards\n", i, z);
+        -:   59:			}
+        -:   60:			//check if player drew less than 3 cards
+      124:   61:			if (numHandCards(&gameOn) != beforeHand + 2 && beforeDeck >= 2) {
+      124:   62:				printf("Test: %d Player: %d drew 2 cards instead of 3 cards\n", i, z);
+        -:   63:			}
+        -:   64:
+      124:   65:			endTurn(&gameOn);
+        -:   66:
+        -:   67:		}
+        -:   68:
+        -:   69:
+        -:   70:	}
+        2:   71:	return 0;
+        -:   72:}
