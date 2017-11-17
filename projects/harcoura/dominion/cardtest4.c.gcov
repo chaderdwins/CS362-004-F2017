@@ -1,0 +1,52 @@
+        -:    0:Source:cardtest4.c
+        -:    0:Graph:cardtest4.gcno
+        -:    0:Data:cardtest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2:Chad Erdwins CS 362
+        -:    3:cardtest4.c
+        -:    4:Unit Test for village
+        -:    5:*/
+        -:    6:
+        -:    7:#include <assert.h>
+        -:    8:#include "dominion.h"
+        -:    9:#include "dominion_helpers.h"
+        -:   10:#include <stdio.h>
+        -:   11:#include "rngs.h"
+        -:   12:#include <stdlib.h>
+        -:   13:#include <math.h>
+        -:   14:
+        2:   15:int personalAssert(int choya, char* Zee) {
+        2:   16:  if (!choya) {
+    #####:   17:    printf ("Message: %s\n", Zee);
+        -:   18:  }
+        2:   19:}
+        -:   20:
+        1:   21:int main () {
+        -:   22:	//initialization variables
+        -:   23:	struct gameState G;
+        1:   24:	int kingdomHand[10] = {minion, smithy, gardens, tribute, baron, adventurer, cutpurse, mine, embargo,
+        -:   25:         outpost};
+        1:   26:	int playerCount = 2;
+        1:   27:	int rngSeed = 22;
+        -:   28:	int challenge;
+        -:   29:	int tally;
+        -:   30:
+        -:   31:	//passing parameters to start game
+        1:   32:	initializeGame(playerCount, kingdomHand, rngSeed, &G);
+        -:   33:	//letting user know what is going on
+        1:   34:	 printf("Testing Village Card Now...\n");
+        1:   35:	 tally = G.handCount[0];
+        -:   36:	 //passing village card to make sure it gets played
+        1:   37:	 G.hand[0][0] = village;
+        1:   38:	 challenge = playCard(0, 1, 0, 0, &G);
+        -:   39:
+        -:   40:	 //using my asserts to see if there is a bug
+        1:   41:	 personalAssert(challenge == 0, "Warning! Bug Detected!");
+        1:   42:	personalAssert(tally == G.handCount[0], "I found a bug!");
+        -:   43: 
+        1:   44:	 printf("Testing Complete.\n\n");
+        -:   45:  
+        1:   46:	 return 0; 
+        -:   47:}

@@ -1,0 +1,49 @@
+        -:    0:Source:cardtest3.c
+        -:    0:Graph:cardtest3.gcno
+        -:    0:Data:cardtest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2:Chad Erdwins CS 362
+        -:    3:cardtest3.c
+        -:    4:Unit Test for gardens
+        -:    5:*/
+        -:    6:
+        -:    7:#include <assert.h>
+        -:    8:#include "dominion.h"
+        -:    9:#include "dominion_helpers.h"
+        -:   10:#include <stdio.h>
+        -:   11:#include "rngs.h"
+        -:   12:#include <stdlib.h>
+        -:   13:#include <math.h>
+        -:   14:
+        2:   15:int personalAssert(int choya, char* Z) {
+        2:   16:  if (!choya) {
+    #####:   17:    printf ("ASSERTION FAILURE: %s\n", Z);
+        -:   18:  }
+        2:   19:}
+        -:   20:
+        1:   21:int main () {
+        -:   22:	//declare and initialize variables here
+        -:   23:	struct gameState G;
+        1:   24:	int gerome[10] = {minion, smithy, gardens, tribute, baron, adventurer, cutpurse, mine, embargo, outpost};
+        1:   25:	int rngSeed = 498;
+        1:   26:	int playerCount = 2;
+        1:   27:	initializeGame(playerCount, gerome, rngSeed, &G);
+        -:   28:	int payLoad;
+        -:   29:	int count;
+        -:   30:
+        -:   31:
+        1:   32:	count = G.handCount[0];
+        1:   33:	printf("Query Gardens for bugs:\n");
+        -:   34:	//passing gardens to the hand to make sure it is going to be played
+        1:   35:	G.hand[0][0] = gardens;
+        1:   36:	 payLoad = playCard(0, 1, 0, 0, &G);
+        -:   37:	//using my personal asserts to check if a bug is present
+        1:   38:	personalAssert(payLoad == -1, "There is a bug present");
+        1:   39:	personalAssert(count == G.handCount[0], "A bug has been found!");
+        -:   40:
+        1:   41:	 printf("Testing Complete.\n");
+        -:   42: 
+        1:   43:	return 0; 
+        -:   44:}

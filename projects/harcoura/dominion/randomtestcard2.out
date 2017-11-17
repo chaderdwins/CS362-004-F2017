@@ -1,0 +1,201 @@
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+Tests Performed: 25
+Bugs Detected: 50
+File 'randomtestcard2.c'
+Lines executed:87.10% of 31
+Creating 'randomtestcard2.c.gcov'
+
+File 'dominion.c'
+Lines executed:47.08% of 565
+Creating 'dominion.c.gcov'
+
+Starting game.
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought smithy
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: smithy played from position 0
+smithy played.
+0: bought gold
+0: end turn
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 4
+1: bought province
+1: endTurn
+0: smithy played from position 2
+smithy played.
+0: bought province
+0: end turn
+1: adventurer played from position 3
+1: bought adventurer
+1: endTurn
+0: bought silver
+0: end turn
+1: bought gold
+1: endTurn
+0: bought silver
+0: end turn
+1: bought gold
+1: endTurn
+0: bought gold
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: bought province
+1: endTurn
+0: bought silver
+0: end turn
+1: adventurer played from position 4
+1: bought province
+1: endTurn
+0: bought province
+0: end turn
+1: bought silver
+1: endTurn
+0: bought province
+0: end turn
+1: bought silver
+1: endTurn
+0: bought gold
+0: end turn
+1: bought gold
+1: endTurn
+0: bought province
+0: end turn
+Finished game.
+Player 0: 13
+Player 1: 40
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+WARNING: Player did not draw 4 cards
+The player drew 3 cards instead of 4 cards
+Tests Performed: 25
+Bugs Detected: 50
+File 'dominion.c'
+Lines executed:47.08% of 565
+Creating 'dominion.c.gcov'
+
+File 'randomtestcard2.c'
+Lines executed:87.10% of 31
+Creating 'randomtestcard2.c.gcov'
+
